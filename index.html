@@ -1,0 +1,66 @@
+<div id="main">
+<h1 id="title"> 
+Democracy Survey Form
+</h1>
+<p id="description"> 
+It is to determine public opinion on Democracy   
+ </p> 
+<form id="survey-form" action="">
+  <div class= "labels">
+    <p> <label id="name-label" for="name"> 
+         *Name:
+        </label>
+         <input type="text" 
+                name="name" 
+                id="name" 
+                placeholder="Enter your Full Name" 
+                required/> 
+    </P>
+  <p> <label id="email-label" for="email"> 
+         *E-mail:
+        </label>
+         <input type="email" 
+                name="email" 
+                id="email" 
+                placeholder="your@email.com" 
+                required/> 
+    </P>
+    <p> <label id="number-label" for="age"> 
+         *Age:
+        </label>
+         <input type="number" 
+                name="age" 
+                id="number" 
+                placeholder="18 and above"
+                min="18"
+                max="110"
+                required/> 
+    </P>
+    <p> <label id="employed-label" for="dropdown"> 
+         *Where are you employed:
+        </label>
+         <select name="employed" 
+                 id="dropdown" 
+                 required/> 
+            <option selected disabled > Type of employment </option>
+            <option value="primary sector"> In primary sector like agriculture </option>
+            <option value="industries"> In manufacturing sector </option>
+            <option value="services"> In service sector </option>
+            <option value="student"> Student </option>
+            <option value="unemployed"> Trying to find a job </option>
+            <option value="other"> Other </option>
+    </P>
+</div>
+<div class= "labels">
+  <p id="belief-label"> 
+         *Do you believe in democracy:
+                <input type="radio" 
+                name="radio" 
+                id="radio"
+                value="definitely"
+                class="input-radio"
+                required checked/>
+    Definitely
+   </P>
+</div>
+</form>
